@@ -2,6 +2,21 @@ import styled from 'styled-components';
 import Button from './Button';
 import LogoImg from './codeit.png';
 import KakaoImg from './kakao.svg';
+import Placeholder, { PlaceholderItem } from './Placeholder';
+
+const A = styled(PlaceholderItem)`
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+`;
+
+const B = styled(PlaceholderItem)`
+  width: 400px;
+`;
+
+const C = styled(PlaceholderItem)`
+  width: 200px;
+`;
 
 function App() {
   return (
@@ -46,6 +61,14 @@ function App() {
         </form>
         <KakaoButton />
       </Container>
+      <hr />
+      <div>
+        <Placeholder>
+          <A />
+          <B />
+          <C />
+        </Placeholder>
+      </div>
     </div>
   );
 }
